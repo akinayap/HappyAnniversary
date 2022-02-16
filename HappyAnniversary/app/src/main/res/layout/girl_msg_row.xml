@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/girl_message"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="8dp"
+		android:autoLink="web"
+		android:text="hi"
+		android:textColor="@color/colorPrimary"
+		android:textSize="14sp"
+		android:visibility="visible"
+		android:layout_gravity="fill"
+		app:layout_constraintBottom_toBottomOf="@+id/girl_icon"
+		app:layout_constraintEnd_toStartOf="@+id/girl_icon"
+		app:layout_constraintTop_toTopOf="@+id/girl_icon" />
+
+
+	<androidx.appcompat.widget.AppCompatImageView
+		android:id="@+id/girl_icon"
+		android:layout_width="40dp"
+		android:layout_height="30dp"
+		android:layout_margin="8dp"
+		android:tint="@color/colorPrimary"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:srcCompat="@drawable/otter" />
+</androidx.constraintlayout.widget.ConstraintLayout>

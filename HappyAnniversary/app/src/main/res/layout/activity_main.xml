@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/constraintLayout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity">
+
+	<pl.droidsonroids.gif.GifImageView
+		android:layout_marginTop="8dp"
+		android:id="@+id/anv_gif"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:scaleType="fitStart"
+		android:src="@drawable/happy_anniversary"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<pl.droidsonroids.gif.GifImageView
+		android:layout_margin="8dp"
+		android:id="@+id/tiger_gif"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:src="@drawable/yay_tiger"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/anv_gif"
+		tools:layout_editor_absoluteX="0dp" />
+
+
+	<pl.droidsonroids.gif.GifImageView
+		android:id="@+id/otter_gif"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:src="@drawable/yay_otter"
+		app:layout_constraintTop_toBottomOf="@+id/tiger_gif"
+		tools:layout_editor_absoluteX="0dp" />
+
+	<androidx.appcompat.widget.AppCompatButton
+		android:id="@+id/start_btn"
+		android:padding="8dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@drawable/btn_bg"
+		android:fontFamily="sans-serif-smallcaps"
+		android:text="@string/start"
+		android:textAllCaps="false"
+		android:textColor="@android:color/black"
+		android:textSize="24sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/otter_gif" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

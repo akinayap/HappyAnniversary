@@ -1,0 +1,29 @@
+0 Hello! Happy 1st year anniversary.
+0 I just wanted to say that I love you alot.
+G love
+0 Do you love me alot too?
+C 05 09
+1 Yes
+G wow
+G ok
+J 11
+1 No
+G lie
+0 Anyway, I have was supposed to hide the present in your room.
+0 But no time I never go your house and secretly place it somewhere.
+0 Will you forgive me?
+C 20 15
+1 No
+G lie
+0 I AM SORRRRRRRRRRRRRRRRRRRRRRRYYYYYYYYYYYYYYYYYYYYYY.
+0 I still love you.
+J 24
+1 Yes
+G wow
+G ok
+G love
+0 OKOK, anyway, ask me for the secret thing.
+0 Now, open the secret thing and use at the next part.
+A 
+0 Point your phone camera to the things in the box! Enjoy!
+B I LOVE YOU!

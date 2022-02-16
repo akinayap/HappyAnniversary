@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/constraintLayout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".ARActivity_Java">
+
+	<com.google.android.material.tabs.TabLayout
+		android:id="@+id/tabLayout"
+		app:layout_constraintTop_toTopOf="parent"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minHeight="?actionBarSize"
+		app:tabGravity="fill"
+		app:tabIndicatorColor="@android:color/white"
+		app:tabIndicatorHeight="4dp"
+		app:tabBackground="@color/colorPrimary"
+		app:tabMode="fixed"
+		app:tabInlineLabel="true"
+		app:tabTextColor="@color/colorAccent"
+		app:tabSelectedTextColor="@android:color/white"/>
+
+	<androidx.viewpager2.widget.ViewPager2
+		android:id="@+id/viewPager"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		app:layout_constraintBottom_toTopOf="@id/tiger_img"
+		app:layout_constraintTop_toBottomOf="@id/tabLayout" />
+
+
+	<a.w.ha.Typewriter
+		android:id="@+id/typeText"
+		android:layout_width="0dp"
+		android:layout_height="100dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginEnd="16dp"
+		android:layout_marginBottom="16dp"
+		android:background="@drawable/text_bg"
+		android:padding="8dp"
+		android:textSize="16sp"
+		android:text="Happy Anniversary!\nI love you so so so so so so much!\nTap here for cool stuff."
+		android:gravity="center"
+		android:textAlignment="center"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
+
+	<androidx.appcompat.widget.AppCompatImageView
+		android:id="@+id/otter_img"
+		android:layout_width="155dp"
+		android:layout_height="122dp"
+		android:layout_marginEnd="8dp"
+		android:layout_marginBottom="75dp"
+		app:layout_constraintBottom_toBottomOf="@+id/typeText"
+		app:layout_constraintEnd_toEndOf="@+id/typeText"
+		app:srcCompat="@drawable/otter" />
+
+	<androidx.appcompat.widget.AppCompatImageView
+		android:id="@+id/tiger_img"
+		android:layout_width="150dp"
+		android:layout_height="130dp"
+		android:layout_marginStart="8dp"
+		android:layout_marginBottom="78dp"
+		app:layout_constraintBottom_toBottomOf="@+id/typeText"
+		app:layout_constraintStart_toStartOf="@+id/typeText"
+		app:srcCompat="@drawable/tiger" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:card_view="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:padding="5dp">
+
+	<androidx.cardview.widget.CardView
+		android:id="@+id/boy_view"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_margin="8dp"
+		card_view:cardBackgroundColor="@color/transparent">
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:paddingStart="8dp"
+			android:paddingEnd="8dp">
+
+			<LinearLayout
+				android:id="@+id/boy_list"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="8dp"
+				android:orientation="vertical"
+				card_view:layout_constraintBottom_toBottomOf="parent"
+				card_view:layout_constraintEnd_toEndOf="parent"
+				card_view:layout_constraintStart_toStartOf="parent"
+				card_view:layout_constraintTop_toBottomOf="@+id/boy_time" />
+<!--
+			<androidx.appcompat.widget.AppCompatTextView
+				android:id="@+id/boy_message"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:autoLink="web"
+				android:text="hi"
+				android:textColor="@color/colorPrimary"
+				android:textSize="14sp"
+				android:visibility="visible"
+				card_view:layout_constraintBottom_toBottomOf="parent"
+				card_view:layout_constraintStart_toEndOf="@+id/boy_icon"
+				card_view:layout_constraintTop_toBottomOf="@+id/boy_time" />
+			<androidx.appcompat.widget.AppCompatImageView
+				android:id="@+id/boy_icon"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_margin="8dp"
+				android:tint="@color/colorPrimary"
+				card_view:layout_constraintBottom_toBottomOf="parent"
+				card_view:layout_constraintStart_toStartOf="parent"
+				card_view:layout_constraintTop_toBottomOf="@+id/boy_time"
+				card_view:srcCompat="@drawable/tiger" />
+-->
+
+			<androidx.appcompat.widget.AppCompatTextView
+				android:id="@+id/boy_name"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="8dp"
+				android:text="❤爱心冰淇淋❤"
+				android:textColor="@color/colorPrimary"
+				android:textSize="14sp"
+				android:textStyle="bold"
+				card_view:layout_constraintStart_toStartOf="parent"
+				card_view:layout_constraintTop_toTopOf="parent" />
+
+			<androidx.appcompat.widget.AppCompatTextView
+				android:id="@+id/boy_time"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="8dp"
+				android:text="16/09/2018, 09:11"
+				android:textColor="@color/colorPrimary"
+				android:textSize="12sp"
+				card_view:layout_constraintStart_toStartOf="parent"
+				card_view:layout_constraintTop_toBottomOf="@id/boy_name" />
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+	</androidx.cardview.widget.CardView>
+
+	<androidx.cardview.widget.CardView
+		android:id="@+id/girl_view"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_margin="8dp"
+		android:layout_alignParentEnd="true"
+		card_view:cardBackgroundColor="@color/transparent"
+		tools:ignore="RelativeOverlap">
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:paddingStart="8dp"
+			android:paddingEnd="8dp">
+
+			<LinearLayout
+				android:id="@+id/girl_list"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="8dp"
+				android:orientation="vertical"
+				card_view:layout_constraintBottom_toBottomOf="parent"
+				card_view:layout_constraintEnd_toEndOf="parent"
+				card_view:layout_constraintStart_toStartOf="parent"
+				card_view:layout_constraintTop_toBottomOf="@+id/girl_time" />
+
+			<androidx.appcompat.widget.AppCompatTextView
+				android:id="@+id/girl_name"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="8dp"
+				android:text="❤爱心冰淇淋的 Ah Girl❤"
+				android:textColor="@color/colorPrimary"
+				android:textSize="14sp"
+				android:textStyle="bold"
+				card_view:layout_constraintEnd_toEndOf="parent"
+				card_view:layout_constraintTop_toTopOf="parent" />
+
+			<androidx.appcompat.widget.AppCompatTextView
+				android:id="@+id/girl_time"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="8dp"
+				android:text="16/09/2018, 09:11"
+				android:textColor="@color/colorPrimary"
+				android:textSize="12sp"
+				card_view:layout_constraintEnd_toEndOf="parent"
+				card_view:layout_constraintTop_toBottomOf="@id/girl_name" />
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+	</androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
